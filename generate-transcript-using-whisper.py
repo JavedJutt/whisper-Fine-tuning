@@ -7,7 +7,7 @@ import os
 checkpoint_path = "./whisper-large-finetuned/final"
 
 print("Loading processor...")
-processor = WhisperProcessor.from_pretrained('./whisper-large-finetuned')
+processor = WhisperProcessor.from_pretrained('openai/whisper-large')
 print("Loading model...")
 model = WhisperForConditionalGeneration.from_pretrained(checkpoint_path)
 
